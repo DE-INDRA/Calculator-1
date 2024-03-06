@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyCalculator.com</title>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="calc">
+            <div class="top-portion">
+                <input id="screen" type="text" placeholder="Enter" readonly>
+            </div>
+            <div class="main-body">
+                <div class="button-row">
+                    <button onclick="calculate('^')">^</button>
+                    <button onclick="calculate('&#8730')">&#8730</button>
+                    <button onclick="Delete()">&#9249</button>
+                    <button onclick="Clear()">C</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="calculate('1')">1</button>
+                    <button onclick="calculate('2')">2</button>
+                    <button onclick="calculate('3')">3</button>
+                    <button onclick="go()">=</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="calculate('4')">4</button>
+                    <button onclick="calculate('5')">5</button>
+                    <button onclick="calculate('6')">6</button>
+                    <button onclick="calculate('/')">/</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="calculate('7')">7</button>
+                    <button onclick="calculate('8')">8</button>
+                    <button onclick="calculate('9')">9</button>
+                    <button onclick="calculate('*')">x</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="calculate('0')">0</button>
+                    <button onclick="calculate('.')">.</button>
+                    <button onclick="calculate('+')">+</button>
+                    <button onclick="calculate('-')">-</button>
+                </div>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>

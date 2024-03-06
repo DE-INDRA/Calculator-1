@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(54, 131, 110);
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgb(238, 30, 30);
+    border: solid;
+    box-shadow: 5px 10px 15px black;
+}
+.top-portion{
+    display: flex;
+    height: 100px;
+    width: 400px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+#screen{
+    border: none;
+    background-color: aliceblue;
+    color: rgb(95, 93, 93);
+    padding: 0px;
+    height: 70px;
+    width: 350px;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: 500;
+}
+.main-body{
+    height: 500px;
+    width: 400px;
+    padding: 0;
+}
+.button-row{
+    height: 80px;
+    margin: 0;
+    background-color:cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-width: 3px;
+    border: solid;
+    border-color: black;
+    color: rgb(54, 54, 54);
+    font-family: Arial;
+    font-size:40px;
+    padding: none;
+    background-color: bisque;
+    box-shadow: 5px 5px 0px rgb(51, 50, 50);
+    transition: 3ms;
+}
+button:active{
+    box-shadow: 0 0 0 black;
+    background-color:  rgb(54, 54, 54);
+    color: bisque;
+}
+
